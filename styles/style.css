@@ -1,0 +1,56 @@
+.tabs {
+    text-align: center;
+  }
+
+  body {
+    background-color: #38858A;
+  }
+  
+  .tab {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px 20px;
+  }
+  
+  .timer-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .timer-circle {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .timer-circle h1 {
+    font-size: 48px;
+  }
+  
+  .timer-buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    font-size: 24px;
+    margin: 10px;
+    padding: 10px 20px;
+  }
+  
+  .focus-tab {
+    background-color: #BA4949;
+  }
+  
+  .short-tab {
+    background-color: #38858A;
+  }
+  
+  .long-tab {
+    background-color: #397097;
+  }
+  

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+*
+{
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+    padding-top: 20px;
+}
+  
+  .left, .right {
+    flex-grow: 1;
+    height: 100vh;
+  }
+  
+  .left {
+    left: 0;
+    background:#141522;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 2%;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    color: #F5F5F7;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img, .logo p {
+    margin: 0;
+  }
+
+  .circle {
+    position: absolute;
+    width:  250px;
+    height: 250px;
+    background: #546FFF;
+    border-radius: 40%;
+    filter: blur(200px);
+  }
+  
+  .top-right {
+    top: 0;
+    right: 0;
+  }
+  
+  .bottom-left {
+    bottom: 0;
+    left: 0;
+  }
+
+  .text-container {
+    text-align: left;
+    margin-bottom: 50px;
+    padding: 0 15%;
+  }
+  
+  .inscription {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 54px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.44) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+        
+  }
+  
+  .right {
+    right: 0;
+    background-color: #F5F5F7; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .form {
+    margin: 0 auto;
+    padding: 20px;
+    left: 50%;
+    text-align: left;
+    align-items: center; 
+    justify-content: center; 
+  }
+
+  .create {
+    display: flex;
+    align-items: center;
+    color: #141522;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .group {
+    margin-bottom: 5%; 
+  }
+
+  .group p {
+    color: #141522;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5%;
+  }
+  
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0; 
+    border-radius: 8px;
+    border-color: #8E92BC;
+    border-width: 1px;
+    background: none;
+  }
+
+  .form .but button {
+    margin-bottom: 10px; 
+  }
+
+  .form button.account-btn,
+  .form button.google-btn {
+    width: 100%;
+    border-radius: 8px;
+    border-width: 0px;
+    font-size: 14px;
+    padding: 10px;
+    height: 40px;
+  }
+
+  .form button.account-btn {
+    color: #F5F5F7;
+    background-color: #546FFF;
+  }
+
+.form button.google-btn {
+  background-color: #E0EFFE;
+  color: #007DFA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-btn img {
+  margin-right: 5px; 
+}
+
+p {
+  color: #8E92BC;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0%;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  color: #546FFF;
+  font-size: 14px;
+  font-weight: 400;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=Mediumice-width, initial-scale=1.0" />
+    <link type="image/x-icon" href="logo.svg" rel="shortcut icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles/overview.css" />
+    <title>Overview</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="lg">
+        <a href="main.html" class="logo"
+          ><img src="/icons/logo.svg" />
+          <p>Helper</p></a
+        >
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="overview.html" class="active">
+            <img src="/icons/overview_active.svg" /> Overview</a
+          >
+        </li>
+        <li>
+          <a href="task.html"><img src="/icons/Task.svg" />Tasks</a>
+        </li>
+        <li>
+          <a href="notes.html"><img src="/icons/Notes.svg" />Notes</a>
+        </li>
+        <li>
+          <a href="pomodoro.html"><img src="/icons/Pomodor.svg" />Pomodoro</a>
+        </li>
+        <li>
+          <a href="setting.html"><img src="/icons/Setting.svg" />Setting</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="header">
+        <div class="colum-left">
+          <h2>Hi, Miya</h2>
+          <p>Let's finish your task today!</p>
+        </div>
+        <div class="column-right">
+          <img src="/icons/user.svg" class="user" />
+        </div>
+      </div>
+
+      <div class="container-column">
+        <div class="box-header">
+          <h2>In Progress</h2>
+        </div>
+        <div class="box-column">
+          <div class="box">
+            <span class="tag" id="red">High</span>
+            <p>
+              This is the title of the card for the thing that needs to be done.
+            </p>
+            <div class="box-footer">
+              <div class="date">
+                <li><i class="fa-solid fa-calendar-days"></i></li>
+                <span>8 May</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <span class="tag" id="green">Low</span>
+            <p>
+              This is the title of the card for the thing that needs to be done.
+            </p>
+            <div class="box-footer">
+              <div class="date">
+                <li><i class="fa-solid fa-calendar-days"></i></li>
+                <span>8 May</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <span class="tag" id="yellow">Medium</span>
+            <p>
+              This is the title of the card for the thing that needs to be done.
+            </p>
+            <div class="box-footer">
+              <div class="date">
+                <li><i class="fa-solid fa-calendar-days"></i></li>
+                <span>8 May</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-column">
+        <div class="box-header">
+          <h2>BackLog</h2>
+        </div>
+        <div class="box-column">
+          <div class="box">
+            <span class="tag" id="red">High</span>
+            <p>
+              This is the title of the card for the thing that needs to be done.
+            </p>
+            <div class="box-footer">
+              <div class="date">
+                <li><i class="fa-solid fa-calendar-days"></i></li>
+                <span>8 May</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <span class="tag" id="green">Low</span>
+            <p>
+              This is the title of the card for the thing that needs to be done.
+            </p>
+            <div class="box-footer">
+              <div class="date">
+                <li><i class="fa-solid fa-calendar-days"></i></li>
+                <span>8 May</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <span class="tag" id="yellow">Medium</span>
+            <p>
+              This is the title of the card for the thing that needs to be done.
+            </p>
+            <div class="box-footer">
+              <div class="date">
+                <li><i class="fa-solid fa-calendar-days"></i></li>
+                <span>8 May</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <section>
+        <div class="xob">
+          <div class="container">
+            <div id="dycalendar"></div>
+          </div>
+        </div>
+      </section>
+      <div class="checkbox-container">
+        <h2 class="heading">To-do list</h2>
+        <div class="checkbox-group">
+          <input type="checkbox" id="checkbox1" />
+          <label for="checkbox1">Listen to music</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="checkbox2" />
+          <label for="checkbox2">Learn JavaScript</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="checkbox3" />
+          <label for="checkbox3" class="checkbox-label">Watch a movie</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="checkbox4" />
+          <label for="checkbox4">Read emails</label>
+        </div>
+      </div>
+      <script>
+        let checkboxes = document.querySelectorAll("input[type='checkbox']");
+        checkboxes.forEach(function (checkbox) {
+          checkbox.addEventListener("click", checkboxHandler);
+        });
+        function checkboxHandler() {
+          if (this.checked === true) {
+            this.closest(".checkbox-group").classList.add("checked");
+          } else {
+            this.closest(".checkbox-group").classList.remove("checked");
+          }
+        }
+      </script>
+    </div>
+    <script src="dycalendar.js"></script>
+    <script>
+      dycalendar.draw({
+        target: "#dycalendar",
+        type: "month",
+        highlighttargetdate: true,
+        prevnextbutton: "show",
+      });
+    </script>
+  </body>
+</html>
