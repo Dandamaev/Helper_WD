@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main_style.css">
+    <link type="image/x-icon" href="/icons/logo.svg" rel="shortcut icon">
+    <title>Main</title>
+</head>
+<body>
+    <header>
+        <div class="conteiner">
+            <a href="index.html" class="logo"><img src="/icons/logo.svg" ><p>Helper</p></a>
+        </div>
+        <div class="group">
+            <ul class="navigation">
+                <li>Why Helper?</li>
+                <li>For Teams</li>
+                <li>Feauters</li>
+                <li>Contact</li>
+                <div class="vertical-line"></div>
+                <li><a href="login.html">Log in</a></li>
+                <li><button class="button" id="register">Accept Help</button></a></li>
+            </ul>
+        </div>
+    </header>
+    <img class="img_example" src="example.png">
+</body>
+<script>document.getElementById("register").addEventListener("click", function() {
+    window.location.href = "register.html"; 
+  });
+  </script>
+</html>

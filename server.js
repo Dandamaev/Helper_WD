@@ -1,0 +1,13 @@
+const express = require("express");
+const app = express();
+const path = require("path");
+
+const port = 3000;
+
+app.use(express.static(path.join(__dirname, "public")));
+
+app.listen(port, () => {
+  console.log(`Локальный сервер запущен на порту ${port}`);
+});
+const { exec } = require('child_process');
+exec(`start http://localhost:${port}`);

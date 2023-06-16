@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/login_style.css">
+    <link type="image/x-icon" href="/icons/logo.svg" rel="shortcut icon">
+    <title>Log in</title>
+</head>
+<body>
+        <div class="conteiner">
+            <a href="index.html" class="logo"><img src="/icons/logo.svg">Helper</p></a>
+        </div>
+    <div class="form">
+        <h2 class="create">Login to your account</h2>
+        <div class="group">
+            <p>Email</p>
+            <input type="email" placeholder="Enter your email">
+        </div>
+        <div class="group">
+            <p>Password</p>
+            <input type="password" placeholder="Enter your password">
+        </div>
+        <div class="but">
+            <button class="account-btn" id="account-btn">Login now</button>
+        </div>
+        <p>Don't have an account? <a href="register.html" class="login">Sign up</a></p>
+      </div>
+      <script>document.getElementById("account-btn").addEventListener("click", function() {
+        window.location.href = "overview.html";
+      });
+      </script>
+</body>
+</html>

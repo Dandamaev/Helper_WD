@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
+
+* {
+  font-family: "Plus+Jakarta+Sans", sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.sidebar {
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.lg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.logo {
+  position: absolute;
+  color: #141522;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.logo img,
+.logo p {
+  margin: 0;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu li .active {
+  color: #141522;
+}
+
+.menu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  color: #8e92bc;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.menu li a:hover {
+  background-color: #f5f5f5;
+}
+
+.menu li a img {
+  margin-right: 10px;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  padding: 25px;
+  left: 15%;
+  width: 55%;
+  height: 100%;
+  background-color: #fafafa;
+}
+
+body h2 {
+  color: #212121;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-column {
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+}
+
+.box-header {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.box-header span {
+  margin-left: 5px;
+  background-color: #fff;
+  padding: 3px 6px;
+  border-radius: 3px;
+  color: #1976d2;
+}
+
+.box-header i {
+  margin-right: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.box {
+  background-color: #fff;
+  padding: 7px 20px;
+  border-radius: 8px;
+  height: 142px;
+  width: 320px;
+  cursor: pointer;
+  margin: 15px 5px;
+  transition: all 0.2s;
+}
+
+.box:hover {
+  transform: translateY(-3px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.box p {
+  margin: 2px 0 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.tag {
+  padding: 5px 8px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 50px;
+  border-radius: 4px;
+}
+
+#red {
+  background-color: #f44336;
+}
+
+#green {
+  background-color: #4caf50;
+}
+
+#yellow {
+  background-color: #fbc02d;
+}
+
+.box-footer {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #757575;
+}
+
+.box-footer i {
+  margin-right: 5px;
+}
+
+.date {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-right {
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.user {
+  width: 50px;
+  height: 50px;
+}
+
+.colum-left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.colum-left h2,
+.colum-left p {
+  margin: 5px 0;
+}
+
+.right {
+  position: fixed;
+  top: 0;
+  padding: 25px;
+  width: 22%;
+  left: 75%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+}
+
+.xob {
+  position: relative;
+}
+
+.container {
+  position: relative;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1), -15px -15px 30px #fff;
+}
+
+#dycalendar {
+  padding: 30px 30px 0;
+}
+
+#dycalendar table tr:nth-child(1) td {
+  color: #141522;
+  font-weight: 600;
+}
+
+#dycalendar table td {
+  color: #8e92bc;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+#dycalendar table td:hover {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 10px rgba(255, 255, 255, 1);
+  border-radius: 40px;
+}
+
+.dycalendar-month-container .dycalendar-target-date {
+  background: #546fff;
+  color: #fff !important;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px rgba(255, 255, 255, 1) !important;
+
+  border-radius: 40px;
+}
+
+.dycalendar-month-container
+  .dycalendar-header
+  .dycalendar-prev-next-btn.prev-btn {
+  width: 20px;
+  height: 20px;
+  font-size: 1em;
+  left: 15px;
+  color: #141522;
+}
+
+.dycalendar-month-container
+  .dycalendar-header
+  .dycalendar-prev-next-btn.next-btn {
+  width: 20px;
+  height: 20px;
+  font-size: 1em;
+  left: 15px;
+  color: #141522;
+}
+
+.dycalendar-month-container
+  .dycalendar-header
+  .dycalendar-prev-next-btn.prev-btn:active,
+.dycalendar-month-container
+  .dycalendar-header
+  .dycalendar-prev-next-btn.next-btn:active {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 10px rgba(255, 255, 255, 1);
+}
+.dycalendar-span-month-year {
+  color: #141522;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.dycalendar-header {
+  text-align: center;
+}
+
+.checkbox-container {
+  padding: 18px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.heading {
+  margin-inline: 0;
+  margin-block: 6px;
+}
+.checkbox-group {
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #f5f5f7;
+}
+
+.checkbox-group.checked {
+  background-color: #00cd2d;
+  box-shadow: rgba(13, 110, 253, 0.25) 0px 8px 24px;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+input[type="checkbox"] ~ label {
+  position: relative;
+}
+
+input[type="checkbox"] ~ label:before {
+  content: "";
+  position: absolute;
+  border: 1px solid #e5e5e5;
+  height: 14px;
+  font-size: 12px;
+  aspect-ratio: 1;
+  top: 0;
+  left: -26px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked ~ label {
+  color: #ffffff;
+}
+
+input[type="checkbox"]:checked ~ label:before {
+  content: "✔";
+  color: #0d6efd;
+}
